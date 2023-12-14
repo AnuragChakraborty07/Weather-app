@@ -1,0 +1,83 @@
+/* CSS Reset  */
+*{
+       margin: 0;
+       padding: 0;
+}
+body{
+       background-color: rgb(132, 148, 148);
+}
+.box{
+    background-color: rgb(73, 176, 217);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 77%;
+    height: 86%;
+    left: 148px;
+    position: absolute;
+    border: 2px solid gray;
+    border-radius: 10px;
+    top: 42px;
+}
+#weathericon{
+       color: yellow;
+       font-size: 6.8rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       position: absolute;
+       top: 56px;
+       left: 515px;
+}
+.fa-solid fa-sun{
+       display: flex;
+       height: 60px;
+       width: 65px;
+       justify-content: center;
+       align-items: center;
+       font-size: 6.8rem;
+       color: yellow;
+}
+.temp{
+    justify-content: center;
+    align-items: center;
+    top: -76px;
+    position: relative;
+    left: 32px;
+}
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 67px;
+    left: -19px;
+}
+.temp_max{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       position: relative;
+       top: 59px;
+       left: -6px;
+       font-size: 20px;
+}
+#weathericon {
+       font-size: 6rem;
+       animation-name: example;
+       animation: example 4s linear infinite alternate;
+}
+@keyframes example {
+       from{
+              transform: scale(0.8);
+       }
+       to {
+              transform: scale(1.2);
+       }
+       from{
+              transform: scale(1.2);
+       }
+       to {
+              transform: scale(0.8);
+       }
+}
